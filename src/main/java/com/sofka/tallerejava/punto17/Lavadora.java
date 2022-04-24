@@ -1,14 +1,13 @@
 package com.sofka.tallerejava.punto17;
 
 public class Lavadora extends Electrodomestico {
-    public int carga =5;
+    public int carga = 5;
 
-    public Lavadora(){
+    public Lavadora() {
 
     }
 
-    public Lavadora(double precioBase, double peso)
-    {
+    public Lavadora(double precioBase, double peso) {
         super(precioBase, peso);
     }
 
@@ -20,9 +19,10 @@ public class Lavadora extends Electrodomestico {
     public int getCarga() {
         return carga;
     }
+
     @Override
-    public double precioFinal(){
-        switch (consumoEnergetico){
+    public double precioFinal() {
+        switch (consumoEnergetico) {
             case 'A':
                 this.precioBase += 100;
                 break;

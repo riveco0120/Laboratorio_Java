@@ -1,10 +1,10 @@
 package com.sofka.tallerejava.punto17;
 
 public class Electrodomestico {
-    protected double precioBase=100;
-    protected String color ="Blanco";
-    protected char consumoEnergetico='F';
-    protected double peso=5;
+    protected double precioBase = 100;
+    protected String color = "Blanco";
+    protected char consumoEnergetico = 'F';
+    protected double peso = 5;
 
     public Electrodomestico() {
     }
@@ -21,40 +21,42 @@ public class Electrodomestico {
         this.peso = peso;
     }
 
-    private void comprobarConsumoEnergetico(char letra){
-        if(letra!='A' || letra !='F'){
-            this.consumoEnergetico='F';
+    private void comprobarConsumoEnergetico(char letra) {
+        if (letra != 'A' || letra != 'F') {
+            this.consumoEnergetico = 'F';
         }
     }
 
-    public void comprobarColor(String color){
-        switch (color.toLowerCase()){
-            case "negro":this.color=color;
-            break;
-            case "azul":this.color=color;
-            break;
+    public void comprobarColor(String color) {
+        switch (color.toLowerCase()) {
+            case "negro":
+                this.color = color;
+                break;
+            case "azul":
+                this.color = color;
+                break;
             case "rojo":
-                this.color=color;
+                this.color = color;
                 break;
             case "gris":
-                this.color=color;
-               break;
+                this.color = color;
+                break;
             default:
-                this.color="blnco";
+                this.color = "blnco";
         }
     }
 
-    public double precioFinal(){
-        switch (consumoEnergetico){
+    public double precioFinal() {
+        switch (consumoEnergetico) {
             case 'A':
                 this.precioBase += 100;
                 break;
             case 'B':
                 this.precioBase += 80;
                 break;
-                case 'C':
-                    this.precioBase += 60;
-                    break;
+            case 'C':
+                this.precioBase += 60;
+                break;
 
             case 'D':
                 this.precioBase += 50;

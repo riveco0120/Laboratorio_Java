@@ -45,7 +45,7 @@ public class Menu {
 
                 }
 
-            }catch(Exception ex){
+            } catch (Exception ex) {
                 System.out.println("Ocurrio un error al selecionar la opcion");
             }
         }

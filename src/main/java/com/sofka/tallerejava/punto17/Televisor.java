@@ -19,8 +19,8 @@ public class Televisor extends Electrodomestico {
     }
 
     @Override
-    public double precioFinal(){
-        switch (consumoEnergetico){
+    public double precioFinal() {
+        switch (consumoEnergetico) {
             case 'A':
                 this.precioBase += 100;
                 break;
