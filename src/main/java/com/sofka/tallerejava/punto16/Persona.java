@@ -27,6 +27,19 @@ public class Persona {
             this.altura = altura;
         }
 
-        
+        //Metodos
+        public String esMayorEdad(){
+            String respues=" ";
+            if(this.edad>17){
+                respues="Eres mayor de edad";
+
+            }
+            else {
+                respues="Eres menor de edad";
+            }
+
+            return respues;
+        }
+
 
 }
