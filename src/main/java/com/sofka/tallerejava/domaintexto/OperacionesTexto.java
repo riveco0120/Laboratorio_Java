@@ -1,12 +1,13 @@
 package com.sofka.tallerejava.domaintexto;
 
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class OperacionesTexto implements InformacionTextoI {
 
     public Scanner consola = new Scanner(System.in);
-
+    public ArrayList list = new ArrayList<>();
 
     @Override
     public String verificarDia() {
@@ -30,9 +31,14 @@ public class OperacionesTexto implements InformacionTextoI {
 
     @Override
     public String cambiarLetra() {
+        String mensaje="";
         String frase="La sonrisa sera la mejor arma contra la tristeza";
-
-        return null;
+        String nuevaFrase = frase.replace("a","e");
+        System.out.println("Ingrese una frase: ");
+        String fraseIngresada = consola.nextLine();
+        String nuevaIngresada = fraseIngresada.replace("a","e");
+        mensaje = nuevaFrase.concat(" " + nuevaIngresada);
+        return mensaje;
     }
 
     @Override
@@ -43,9 +49,19 @@ public class OperacionesTexto implements InformacionTextoI {
         return nuevaFrase;
     }
 
+    @Override
+    public String longitud() {
+        return null;
+    }
 
 
     public void imprimirRespues(String respuesta){
         System.out.println(respuesta);
     }
+
+    public static void main(String[] args) {
+        OperacionesTexto texto = new OperacionesTexto();
+        System.out.println(texto.cambiarLetra());
+    }
+
 }
