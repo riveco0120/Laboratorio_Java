@@ -59,6 +59,18 @@ public class OperacionesTexto implements InformacionTextoI {
         return "logitud " + logitu;
     }
 
+    @Override
+    public String compararPalabras() {
+        System.out.println("Ingrese una palabra: ");
+        String primeraPalabra =consola.nextLine();
+        System.out.println("Ingrese otra palabra: ");
+        String segundaPalabra=consola.nextLine();
+        if(primeraPalabra.equalsIgnoreCase(segundaPalabra)){
+            return "Las palabras son iguales";
+        }
+        return "Las palabras no son iguales";
+    }
+
     //metodos de la propia clase
     public String cantidadVocales(String frase) {
         frase = frase.toLowerCase();
