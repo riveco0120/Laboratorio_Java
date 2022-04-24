@@ -20,5 +20,35 @@ public class Lavadora extends Electrodomestico {
     public int getCarga() {
         return carga;
     }
+    @Override
+    public double precioFinal(){
+        switch (consumoEnergetico){
+            case 'A':
+                this.precioBase += 100;
+                break;
+            case 'B':
+                this.precioBase += 80;
+                break;
+            case 'C':
+                this.precioBase += 60;
+                break;
+
+            case 'D':
+                this.precioBase += 50;
+                break;
+
+            case 'E':
+                this.precioBase += 30;
+                break;
+
+            case 'F':
+                this.precioBase += 10;
+                break;
+
+        }
+
+        return precioBase;
+    }
+
 }
 
