@@ -40,6 +40,14 @@ public class Persona {
 
             return respues;
         }
+        
+    protected void comprobarSexo(char sexo){
+        if(sexo != this.sexo){
+            this.sexo='H';
+        }
+    }
 
 
 }
+
+
