@@ -13,5 +13,21 @@ public class OperacioneAvanzado extends InformacionNumero{
         this.imprimirResultado(resultado);
     }
 
+
+    public void numerosImpares(){
+        int contador=1;
+        String mensaje="";
+        while (contador<=100){
+            if(contador%2==0){
+                mensaje = "El numero " + contador + "es par";
+            }
+            else {
+                mensaje ="El numero " + contador + "es impar";
+            }
+        }
+
+        this.imprimirResultado(mensaje);
+    }
+
 }
 
