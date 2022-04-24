@@ -40,13 +40,29 @@ public class Persona {
 
             return respues;
         }
-        
+
     protected void comprobarSexo(char sexo){
         if(sexo != this.sexo){
             this.sexo='H';
         }
     }
 
+    public String calcularIMC(){
+        double alturaMetro = this.altura/100;
+        double calculoIMC=(this.peso/Math.pow(alturaMetro,2));
+        String numero="";
+        if(calculoIMC<20){
+            numero = String.valueOf(-1) + " Estas en tu peso ideal";
+        }
+        else if(calculoIMC>=20 && calculoIMC<=25){
+            numero= String.valueOf(0) +" Esta por debajo de tu peso ideal";
+        }
+        else {
+            numero=String.valueOf(1) +" Estas sobre tu peso ideal";
+        }
+
+        return numero;
+    }
 
 }
 
