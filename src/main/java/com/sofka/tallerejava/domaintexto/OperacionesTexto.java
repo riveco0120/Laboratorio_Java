@@ -45,7 +45,7 @@ public class OperacionesTexto implements InformacionTextoI {
     public String eliminarSpacios() {
         System.out.println("Ingrese una frase");
         String Frase =consola.nextLine();
-        String nuevaFrase = Frase.trim();
+        String nuevaFrase = Frase.replace(" ", "");
         return nuevaFrase;
     }
 
