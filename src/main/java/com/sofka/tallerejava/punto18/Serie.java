@@ -1,6 +1,6 @@
 package com.sofka.tallerejava.punto18;
 
-public class Serie {
+public class Serie implements IServicios{
 
     private String titulo = "";
     private int numeroTemporda = 3;
@@ -67,4 +67,23 @@ public class Serie {
                 '}';
     }
 
+    @Override
+    public void Entregar() {
+
+    }
+
+    @Override
+    public void devolver() {
+
+    }
+
+    @Override
+    public boolean IsEntregado() {
+        return false;
+    }
+
+    @Override
+    public int compareTo(Object a) {
+        return 0;
+    }
 }

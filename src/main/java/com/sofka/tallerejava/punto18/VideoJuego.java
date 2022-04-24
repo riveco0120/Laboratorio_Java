@@ -2,7 +2,7 @@ package com.sofka.tallerejava.punto18;
 
 import java.util.ArrayList;
 
-public class VideoJuego {
+public class VideoJuego implements IServicios{
 
     public String titulo="";
     public int horasEstimada =10;
@@ -68,5 +68,25 @@ public class VideoJuego {
                 ", genero='" + genero + '\'' +
                 ", compañia='" + compañia + '\'' +
                 '}';
+    }
+
+    @Override
+    public void Entregar() {
+
+    }
+
+    @Override
+    public void devolver() {
+
+    }
+
+    @Override
+    public boolean IsEntregado() {
+        return false;
+    }
+
+    @Override
+    public int compareTo(Object a) {
+        return 0;
     }
 }
