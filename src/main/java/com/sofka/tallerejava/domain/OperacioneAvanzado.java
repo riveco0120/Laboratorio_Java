@@ -47,5 +47,21 @@ public class OperacioneAvanzado extends InformacionNumero{
         }
     }
 
+    public void mayorQueCero(){
+        int numero;
+        String mensaje="";
+        do {
+                System.out.println("Ingrese un numero: ");
+                 numero = this.ingresarNumero();
+                 mensaje=String.valueOf(numero);
+                 this.imprimirResultado(mensaje);
+            }while (numero<0);
+
+        mensaje=("El numero "+ numero +"Es menor que cero");
+        this.imprimirResultado(mensaje);
+    }
+
+
 }
+
 
