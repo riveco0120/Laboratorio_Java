@@ -2,9 +2,9 @@ package com.sofka.tallerejava.domain;
 
 import java.util.Scanner;
 
-public class Operaciones extends InformacionNumero{
+public class Operacione extends InformacionNumero{
 
-    public Operaciones(int numeroUno, int numeroDos){
+    public Operacione(int numeroUno, int numeroDos){
         super(numeroUno,numeroDos);
     }
 
@@ -35,6 +35,6 @@ public class Operaciones extends InformacionNumero{
         double resultado =(numeroPi*(Math.pow(radio,2)));
         System.out.println(resultado);
     }
-    
+
 
 }
