@@ -72,21 +72,28 @@ public class VideoJuego implements IServicios{
 
     @Override
     public void Entregar() {
-
+        this.entregado =true;
     }
 
     @Override
     public void devolver() {
-
+        this.entregado =false;
     }
 
     @Override
     public boolean IsEntregado() {
-        return false;
+        return entregado;
     }
 
     @Override
     public int compareTo(Object a) {
-        return 0;
+        int res=-1;
+        VideoJuego videoJuego = (VideoJuego) a;
+        if (this.horasEstimada > videoJuego.getHorasEstimada()){
+            res=1;
+        }else if(this.horasEstimada == videoJuego.getHorasEstimada()){
+            res=0;
+        }
+        return res;
     }
 }
