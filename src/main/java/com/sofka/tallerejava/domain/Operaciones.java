@@ -18,7 +18,13 @@ public class Operaciones extends InformacionNumero{
          return "El numero " + numeroUno + "Es mayor";
     }
 
- 
+    public void compararMayorConsola(){
+        this.numeroUno = this.ingresarNumero();
+        this.numeroDos = this.ingresarNumero();
+        String resultado= this.compararMayor(numeroDos,numeroUno);
+        System.out.println(resultado);
+    }
+
 
 
 
