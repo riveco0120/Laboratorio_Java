@@ -76,6 +76,32 @@ public class Persona {
         }
         return numeroRandom;
     }
+
+    protected String generaDNI(int Dni){
+        final String DNI="ABCDEFGH";
+        String numeroRandom=this.numeroAletatorio();
+        String letraSt="";
+        if(Dni==0){
+            int numeroConvertido =Integer.parseInt(numeroRandom);
+            int oper=numeroConvertido%9;
+            char letra = DNI.charAt(oper);
+            letraSt=String.valueOf(letra);
+        }
+        if(Dni>10000000 && Dni<=99999999) {
+            int oper=Dni%9;
+            char letra = DNI.charAt(oper);
+            letraSt=String.valueOf(letra);
+
+        }
+        else if(Dni>0 && Dni<=9999999) {
+            numeroRandom = String.valueOf(Dni);
+            System.out.println("El numero debe de ser de 8 cifras");
+            letraSt="Numero no valido";
+        }
+        this.DNI=numeroRandom+letraSt;
+        return numeroRandom+letraSt;
+    }
+
     public String getNombre() {
         return this.nombre;
     }
