@@ -1,4 +1,4 @@
-package com.sofka.tallerejava.domain;
+package com.sofka.tallerejava.domainnumeros;
 
 import java.util.Scanner;
 
