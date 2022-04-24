@@ -19,13 +19,22 @@ public class Operaciones extends InformacionNumero{
     }
 
     public void compararMayorConsola(){
+        System.out.println("Ingrese un numero: ");
         this.numeroUno = this.ingresarNumero();
+        System.out.println("Ingrese otro numero: ");
         this.numeroDos = this.ingresarNumero();
         String resultado= this.compararMayor(numeroDos,numeroUno);
         System.out.println(resultado);
     }
 
 
-
+    public void calcularAreaCirculo(){
+        System.out.println("Ingrese el radio: ");
+        this.radio =(this.ingresarNumero());
+        double numeroPi = Math.PI;
+        double resultado =(numeroPi*(Math.pow(radio,2)));
+        System.out.println(resultado);
+    }
+    
 
 }

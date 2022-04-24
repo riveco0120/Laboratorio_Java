@@ -6,6 +6,7 @@ public class InformacionNumero {
     protected int numeroUno;
     protected int numeroDos;
     protected Scanner consola;
+    protected double radio;
 
     public InformacionNumero(){
 
@@ -20,7 +21,6 @@ public class InformacionNumero {
     }
 
     public int ingresarNumero(){
-        System.out.println("Ingrese un numero por favor");
         this.consola=new Scanner(System.in);
         int numero = consola.nextInt();
         return numero;
