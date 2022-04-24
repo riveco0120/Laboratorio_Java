@@ -2,6 +2,8 @@ package com.sofka.tallerejava.domainnumeros;
 
 public class Operacione extends InformacionNumero{
 
+    public final double PI = Math.PI;
+
     public Operacione(int numeroUno, int numeroDos){
         super(numeroUno,numeroDos);
     }
@@ -29,8 +31,7 @@ public class Operacione extends InformacionNumero{
     public void calcularAreaCirculo(){
         System.out.println("Ingrese el radio: ");
         this.radio =(this.ingresarNumero());
-        double numeroPi = Math.PI;
-        double resultado =(numeroPi*(Math.pow(radio,2)));
+        double resultado =(PI*(Math.pow(radio,2)));
         System.out.println(resultado);
     }
 
