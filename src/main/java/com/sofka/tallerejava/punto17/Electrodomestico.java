@@ -26,7 +26,24 @@ public class Electrodomestico {
             this.consumoEnergetico='F';
         }
     }
-    
+
+    public void comprobarColor(String color){
+        switch (color.toLowerCase()){
+            case "negro":this.color=color;
+            break;
+            case "azul":this.color=color;
+            break;
+            case "rojo":
+                this.color=color;
+                break;
+            case "gris":
+                this.color=color;
+               break;
+            default:
+                this.color="blnco";
+        }
+    }
+
 
 }
 
