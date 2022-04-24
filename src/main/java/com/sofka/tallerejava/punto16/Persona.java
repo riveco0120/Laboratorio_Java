@@ -64,6 +64,22 @@ public class Persona {
         return numero;
     }
 
+
+    public String numeroAletatorio(){
+        String numeroRandom = "";
+        int contador =0;
+        while (contador<8){
+            int numeroAle = (int) Math.floor(Math.random()*((9+1)+0));
+            String numeroCaracter = String.valueOf(numeroAle);
+            numeroRandom +=numeroCaracter;
+            contador+=1;
+        }
+        return numeroRandom;
+    }
+    public String getNombre() {
+        return this.nombre;
+    }
+
 }
 
 
