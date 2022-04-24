@@ -47,6 +47,17 @@ public class OperacioneAvanzado extends InformacionNumero{
         }
     }
 
+    public void imprimirPorTeclado(){
+        System.out.println("ingrese un numero");
+       int numero= this.ingresarNumero();
+       while (numero<=1000){
+           System.out.println(numero);
+           numero+=2;
+
+           }
+       }
+
+
     public void mayorQueCero(){
         int numero;
         String mensaje="";
