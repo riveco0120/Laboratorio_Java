@@ -56,7 +56,7 @@ public class OperacioneAvanzado extends InformacionNumero{
 
            }
        }
-    
+
 
     public void mayorQueCero(){
         int numero;
