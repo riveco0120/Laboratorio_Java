@@ -1,5 +1,6 @@
 package com.sofka.tallerejava.domaintexto;
 
+import javax.xml.stream.FactoryConfigurationError;
 import java.awt.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -51,7 +52,50 @@ public class OperacionesTexto implements InformacionTextoI {
 
     @Override
     public String longitud() {
-        return null;
+        System.out.println("Ingresa una frase");
+        String frase = consola.nextLine();
+        int logitu = frase.length();
+        System.out.println(this.cantidadVocales(frase));
+        return "logitud " + logitu;
+    }
+
+    //metodos de la propia clase
+    public String cantidadVocales(String frase) {
+        frase = frase.toLowerCase();
+        int contador = 0;
+        int vocala=0;
+        int vocale=0;
+        int vocali=0;
+        int vocalo=0;
+        int vocalu=0;
+        for (int i = frase.length()-1; i >= 0; i--){
+          switch (frase.charAt(i)){
+              case 'a':contador++;
+                    vocala++;
+                    break;
+              case  'e':
+                  contador++;
+                  vocale++;
+                  break;
+              case  'i':
+                  contador++;
+                  vocali++;
+                  break;
+              case  'o':
+                  contador++;
+                  vocalo++;
+                  break;
+              case  'u':
+                  vocalu++;
+                  contador++;
+                    break;
+          }
+        }
+
+        return "Canitdad a: " + vocala + " \n "+ "Canitdad e: " + vocale + " \n "
+        + "Canitdad i: " + vocali + " \n " + "Canitdad 0: " + vocalo + " \n " + "Canitdad u: " + vocalu
+                + " \n " + "Canitdad total: " + contador;
+
     }
 
 
@@ -61,7 +105,7 @@ public class OperacionesTexto implements InformacionTextoI {
 
     public static void main(String[] args) {
         OperacionesTexto texto = new OperacionesTexto();
-        System.out.println(texto.cambiarLetra());
+        System.out.println(texto.cantidadVocales("cantidad voclaes " + "Hola"));
     }
 
 }
