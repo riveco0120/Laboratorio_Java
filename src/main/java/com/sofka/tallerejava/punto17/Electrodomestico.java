@@ -73,7 +73,29 @@ public class Electrodomestico {
         return precioBase;
     }
 
-    
+    public double getPrecioBase() {
+        return precioBase;
+    }
 
+    public void setPrecioBase(double precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public char getConsumoEnergetico() {
+        return consumoEnergetico;
+    }
+
+
+    public double getPeso() {
+        return peso;
+    }
 }
 
