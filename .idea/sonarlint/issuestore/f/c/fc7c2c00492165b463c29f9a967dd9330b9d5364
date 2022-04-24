@@ -1,0 +1,10 @@
+
+c	java:S116"NRename this field "IVA" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¿ÿÎœ
+7
+java:S1170"!Make this final field static too.(¿ÿÎœ
+?
+java:S1659")Declare "precioFinal" on a separate line.(ã—Üí
+N	java:S106	"9Replace this use of System.out or System.err by a logger.(Ñáš¬
+S	java:S1066"9Replace this use of System.out or System.err by a logger.(ÇÑ÷åýÿÿÿÿ
+a
+java:S1192"KDefine a constant instead of duplicating this literal "El numero " 5 times.(Á«ßÖ
