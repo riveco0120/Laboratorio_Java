@@ -1,6 +1,4 @@
-package com.sofka.tallerejava.domain;
-
-import java.util.Scanner;
+package com.sofka.tallerejava.domainnumeros;
 
 public class Operacione extends InformacionNumero{
 
