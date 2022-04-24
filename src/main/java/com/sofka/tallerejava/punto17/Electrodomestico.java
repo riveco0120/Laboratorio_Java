@@ -21,5 +21,12 @@ public class Electrodomestico {
         this.peso = peso;
     }
 
+    private void comprobarConsumoEnergetico(char letra){
+        if(letra!='A' || letra !='F'){
+            this.consumoEnergetico='F';
+        }
+    }
+    
+
 }
 
