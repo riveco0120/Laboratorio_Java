@@ -55,7 +55,7 @@ public class Electrodomestico {
         return colorElegido[0];
     }
 
-    public double precioFinal() {
+    public double precioSegunConsumoEnergetico() {
         switch (consumoEnergetico) {
             case 'A':
                 this.precioBase += 100;
@@ -99,40 +99,27 @@ public class Electrodomestico {
         return precio;
     }
 
+    public double precioFinal(){
+        return getPrecioBase()+this.precioSegunPeso()+this.precioSegunConsumoEnergetico();
+    }
 
-    //metodos getter y setter
+
+    //metodos getter
 
     public double getPeso() {
         return peso;
     }
 
-
     public double getPrecioBase() {
         return precioBase;
-    }
-
-    public void setPrecioBase(double precioBase) {
-        this.precioBase = precioBase;
     }
 
     public String getColor() {
         return color;
     }
 
-    public void setColor(String color) {
-        this.color = color;
-    }
-
     public char getConsumoEnergetico() {
         return consumoEnergetico;
-    }
-
-
-
-    public static void main(String[] args) {
-        Electrodomestico electrodomestico = new Electrodomestico();
-        char letra= electrodomestico.comprobarConsumoEnergetico('A');
-        System.out.println(letra);
     }
 
 
