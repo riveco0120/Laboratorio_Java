@@ -25,6 +25,8 @@ public class OperacioneAvanzado extends InformacionNumero {
                 mensaje = "El numero " + contador + "es impar";
                 this.imprimirResultado(mensaje);
             }
+
+            contador++;
         }
 
     }
@@ -43,6 +45,7 @@ public class OperacioneAvanzado extends InformacionNumero {
 
 
         }
+
     }
 
     public void imprimirPorTeclado() {
@@ -64,10 +67,24 @@ public class OperacioneAvanzado extends InformacionNumero {
             numero = this.ingresarNumero();
             mensaje = String.valueOf(numero);
             this.imprimirResultado(mensaje);
-        } while (numero < 0);
+        } while (numero > 0);
 
         mensaje = ("El numero " + numero + "Es menor que cero");
         this.imprimirResultado(mensaje);
+    }
+
+    public static void main(String[] args) {
+        OperacioneAvanzado operacioneAvanzado = new OperacioneAvanzado();
+        System.out.println("Calcular iva");
+        operacioneAvanzado.calcularIva();
+        System.out.println("Numeros impares while");
+        operacioneAvanzado.numerosImpares();
+        System.out.println("numeros imapres for");
+        operacioneAvanzado.numeroImparesDos();
+        System.out.println("inprimir por teclado");
+        operacioneAvanzado.imprimirPorTeclado();
+        System.out.println("Mayor que cero");
+        operacioneAvanzado.mayorQueCero();
     }
 
 

@@ -1,5 +1,6 @@
 package com.sofka.tallerejava.domaintexto;
 
+import javax.security.auth.callback.TextOutputCallback;
 import javax.xml.stream.FactoryConfigurationError;
 import java.awt.*;
 import java.util.ArrayList;
@@ -118,7 +119,16 @@ public class OperacionesTexto implements InformacionTextoI {
 
     public static void main(String[] args) {
         OperacionesTexto texto = new OperacionesTexto();
-        System.out.println(texto.cantidadVocales("cantidad voclaes " + "Hola"));
+        System.out.println("Verificar dia de la semana");
+        System.out.println(texto.verificarDia());
+        System.out.println("cambiar letra");
+        System.out.println(texto.cambiarLetra());
+        System.out.println("Eliminar espacios");
+        System.out.println(texto.eliminarSpacios());
+        System.out.println("Calcular longitud");
+        System.out.println(texto.longitud());
+        System.out.println("Comprobar palabra");
+        System.out.println(texto.compararPalabras());
     }
 
 }

@@ -4,6 +4,10 @@ public class Operacione extends InformacionNumero {
 
     public final double PI = Math.PI;
 
+    Operacione(){
+
+    }
+
     public Operacione(int numeroUno, int numeroDos) {
         super(numeroUno, numeroDos);
     }
@@ -14,7 +18,7 @@ public class Operacione extends InformacionNumero {
             } else if (numeroDos > numeroUno) {
                 return "El numero " + numeroDos + " Es mayor";
             }
-            return "El numero " + numeroUno + "Es mayor";
+            return "El numero " + numeroUno + " Es mayor";
 
       }
 
@@ -33,6 +37,16 @@ public class Operacione extends InformacionNumero {
         this.radio = (this.ingresarNumero());
         double resultado = (PI * (Math.pow(radio, 2)));
         System.out.println(resultado);
+    }
+
+    public static void main(String[] args) {
+        Operacione operacione = new Operacione();
+        System.out.println("Comprobar mayor");
+        System.out.println(operacione.compararMayor(2,3));
+        System.out.println("Comprobar mayor ingresado por consola");
+        operacione.compararMayorConsola();
+        System.out.println("Calcular el area de un circulo");
+        operacione.calcularAreaCirculo();
     }
 
 

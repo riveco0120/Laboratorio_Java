@@ -9,4 +9,9 @@ public class MostraFechas {
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
         System.out.println(dtf.format(LocalDateTime.now()));
     }
+
+    public static void main(String[] args) {
+        MostraFechas mostraFechas = new MostraFechas();
+        mostraFechas.imprimirFechaHora();
+    }
 }
