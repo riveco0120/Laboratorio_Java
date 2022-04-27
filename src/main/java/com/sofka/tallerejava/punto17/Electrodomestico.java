@@ -84,7 +84,29 @@ public class Electrodomestico {
         return precioBase;
     }
 
-    
+    protected double precioSegunPeso(){
+        double precio=0;
+        double peso=getPeso();
+        if(peso>=0 && peso<=19){
+            precio=10;
+        }else if(peso>19 && peso<50){
+            precio=50;
+        }else if(peso>49 && peso<80){
+            precio=80;
+        }else if(precio>80){
+            precio =100;
+        }
+        return precio;
+    }
+
+
+    //metodos getter y setter
+
+    public double getPeso() {
+        return peso;
+    }
+
+
     public double getPrecioBase() {
         return precioBase;
     }
@@ -106,9 +128,6 @@ public class Electrodomestico {
     }
 
 
-    public double getPeso() {
-        return peso;
-    }
 
     public static void main(String[] args) {
         Electrodomestico electrodomestico = new Electrodomestico();
