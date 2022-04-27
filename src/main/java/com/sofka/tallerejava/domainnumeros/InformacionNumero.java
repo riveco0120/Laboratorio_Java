@@ -3,6 +3,7 @@ package com.sofka.tallerejava.domainnumeros;
 import java.util.Scanner;
 
 public class InformacionNumero {
+
     protected int numeroUno;
     protected int numeroDos;
     protected Scanner consola;

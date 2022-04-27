@@ -9,13 +9,14 @@ public class Operacione extends InformacionNumero {
     }
 
     public String compararMayor(int numeroDos, int numeroUno) {
-        if (numeroDos == numeroUno) {
-            return "Los numeros son iguales";
-        } else if (numeroDos > numeroUno) {
-            return "El numero " + numeroDos + " Es mayor";
-        }
-        return "El numero " + numeroUno + "Es mayor";
-    }
+                  if (numeroDos == numeroUno) {
+                return "Los numeros son iguales";
+            } else if (numeroDos > numeroUno) {
+                return "El numero " + numeroDos + " Es mayor";
+            }
+            return "El numero " + numeroUno + "Es mayor";
+
+      }
 
     public void compararMayorConsola() {
         System.out.println("Ingrese un numero: ");

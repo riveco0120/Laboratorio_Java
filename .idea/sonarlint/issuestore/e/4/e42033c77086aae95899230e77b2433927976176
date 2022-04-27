@@ -1,0 +1,21 @@
+
+L
+java:S3740"/Provide the parametrized type for this generic.(øš•·8àğ£ì…0
+p	java:S116"TRename this field "compaÃ±ia" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(™Øğ8Ò®£ì…0
+‚
+java:S1319"eThe type of "lista" should be an interface such as "List" rather than the implementation "ArrayList".(øš•·8úğ£ì…0
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(É¤ï·8õ®£ì…0
+r	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉùçÍşÿÿÿÿ8÷®£ì…0
+t
+java:S1104"RMake titulo a static final constant or non-public and provide accessors if needed.(Ù™¢ùÿÿÿÿ8ø®£ì…0
+{
+java:S1104"YMake horasEstimada a static final constant or non-public and provide accessors if needed.(©Ü‰ÿÿÿÿÿÿ8ú®£ì…0
+w
+java:S1104	"UMake entregado a static final constant or non-public and provide accessors if needed.(ŸÍ¤³úÿÿÿÿ8ú®£ì…0
+o
+java:S1104
+"RMake genero a static final constant or non-public and provide accessors if needed.(ûÇÿÈ8û®£ì…0
+r
+java:S1104"UMake compaÃ±ia a static final constant or non-public and provide accessors if needed.(™Øğ8û®£ì…0
+n
+java:S1104"QMake lista a static final constant or non-public and provide accessors if needed.(øš•·8ü®£ì…0

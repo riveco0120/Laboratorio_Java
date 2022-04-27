@@ -1,0 +1,13 @@
+
+h	java:S116"NRename this field "DNI" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èüöšýÿÿÿÿ
+X
+java:S1854!";Remove this useless assignment to local variable "respues".(óþÅ³8ÍŒñè…0
+F
+java:S2140F")Use "java.util.Random.nextInt()" instead.(ê­«—8Ë¨›é…0
+X
+java:S1117O"6Rename "DNI" which hides the field declared at line 7.(ÔÀ¸ðþÿÿÿÿ8öÿ¨é…0
+U	java:S106_"9Replace this use of System.out or System.err by a logger.(â×•§8€©é…0
+l	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡õ\8åÐëé…0
+r	java:S117N"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÉíÞÜüÿÿÿÿ8ˆ€©é…0
+>
+java:S1643H"Use a StringBuilder instead.(¥é’èýÿÿÿÿ8è¨›é…0

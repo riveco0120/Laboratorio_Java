@@ -1,0 +1,11 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ë‚‰Ê
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¶Ï‚¾
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ñîÌ·úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‡µÖ„üÿÿÿÿ
+N	java:S106!"9Replace this use of System.out or System.err by a logger.(¶Ï‚¾
+N	java:S106&"9Replace this use of System.out or System.err by a logger.(îë½
+[
+java:S1192"FDefine a constant instead of duplicating this literal "negro" 4 times.(¥³É
+]
+java:S1192"GDefine a constant instead of duplicating this literal "blanco" 5 times.(ÿÒÉÁ
