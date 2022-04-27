@@ -41,26 +41,18 @@ public class Electrodomestico {
             return auxiliar.charAt(0);
         }
 
-        return Electrodomestico.CONSUMOENERGETICO;
+        return CONSUMOENERGETICO;
     }
 
-    public void comprobarColor(String color) {
-        switch (color.toLowerCase()) {
-            case "negro":
-                this.color = color;
-                break;
-            case "azul":
-                this.color = color;
-                break;
-            case "rojo":
-                this.color = color;
-                break;
-            case "gris":
-                this.color = color;
-                break;
-            default:
-                this.color = "blnco";
-        }
+    public String comprobarColor(String color) {
+        final String colorElegido[] ={COLORPORDEFECTO};
+        coloresDisponible.forEach(elemento->{
+            if(elemento.equalsIgnoreCase(color)){
+               colorElegido[0] = color;
+            }
+        });
+
+        return colorElegido[0];
     }
 
     public double precioFinal() {
@@ -92,6 +84,7 @@ public class Electrodomestico {
         return precioBase;
     }
 
+    
     public double getPrecioBase() {
         return precioBase;
     }
