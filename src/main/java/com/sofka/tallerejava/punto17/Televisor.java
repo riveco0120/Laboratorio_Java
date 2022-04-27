@@ -1,8 +1,10 @@
 package com.sofka.tallerejava.punto17;
 
 public class Televisor extends Electrodomestico {
-    public double resolucion = 20;
-    public boolean sintonizadorTDT = false;
+    static final int RESOLUCIONPORDEFECTO=20;
+    static final boolean SINTONIZADORTDTPORDEFECTO=false;
+    public double resolucion;
+    public boolean sintonizadorTDT;
 
     public Televisor() {
 
@@ -18,35 +20,6 @@ public class Televisor extends Electrodomestico {
         this.sintonizadorTDT = sintonizadorTDT;
     }
 
-    @Override
-    public double precioFinal() {
-        switch (consumoEnergetico) {
-            case 'A':
-                this.precioBase += 100;
-                break;
-            case 'B':
-                this.precioBase += 80;
-                break;
-            case 'C':
-                this.precioBase += 60;
-                break;
-
-            case 'D':
-                this.precioBase += 50;
-                break;
-
-            case 'E':
-                this.precioBase += 30;
-                break;
-
-            case 'F':
-                this.precioBase += 10;
-                break;
-
-        }
-
-        return precioBase;
-    }
 
     public double getResolucion() {
 
@@ -56,6 +29,19 @@ public class Televisor extends Electrodomestico {
     public boolean isSintonizadorTDT() {
 
         return sintonizadorTDT;
+    }
+
+    @Override
+    public double precioFinal() {
+        double precioTotal = super.precioFinal();
+        if(getResolucion()>40){
+            precioTotal += precioTotal*0.30;
+        }
+        if(isSintonizadorTDT())
+        {
+            precioTotal+=250000;
+        }
+        return precioTotal;
     }
 
 }

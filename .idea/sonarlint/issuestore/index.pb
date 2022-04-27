@@ -21,5 +21,3 @@ k
 ;src/main/java/com/sofka/tallerejava/punto17/Ejecutable.java,6\4\6452756d8a7e7b8be02b32b05af68b72e78259f9
 i
 9src/main/java/com/sofka/tallerejava/punto17/Lavadora.java,1\e\1eb47e364c07f6bd800bdcb242568dcd33c50cf1
-j
-:src/main/java/com/sofka/tallerejava/punto17/Televisor.java,3\0\30c040cf052a702668990a863740c6e9b41f1097
