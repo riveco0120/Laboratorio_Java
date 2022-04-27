@@ -1,14 +1,18 @@
 package com.sofka.tallerejava.punto17;
 
 public class Lavadora extends Electrodomestico {
+    static final int CARGAPORDEFECTO =5;
     public int carga = 5;
 
     public Lavadora() {
+        super();
+        this.carga=CARGAPORDEFECTO;
 
     }
 
     public Lavadora(double precioBase, double peso) {
         super(precioBase, peso);
+        this.carga=CARGAPORDEFECTO;
     }
 
     public Lavadora(int carga, double precioBase, String color, char consumoEnergetico, double peso) {
@@ -22,32 +26,10 @@ public class Lavadora extends Electrodomestico {
 
     @Override
     public double precioFinal() {
-        switch (consumoEnergetico) {
-            case 'A':
-                this.precioBase += 100;
-                break;
-            case 'B':
-                this.precioBase += 80;
-                break;
-            case 'C':
-                this.precioBase += 60;
-                break;
-
-            case 'D':
-                this.precioBase += 50;
-                break;
-
-            case 'E':
-                this.precioBase += 30;
-                break;
-
-            case 'F':
-                this.precioBase += 10;
-                break;
-
+        if (getCarga() > 30) {
+            return super.precioFinal() + 50;
         }
-
-        return precioBase;
+        return super.precioFinal();
     }
 
 }
