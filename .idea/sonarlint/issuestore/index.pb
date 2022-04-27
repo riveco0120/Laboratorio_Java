@@ -17,5 +17,3 @@ h
 8src/main/java/com/sofka/tallerejava/punto16/Persona.java,0\a\0acf71de96217820cddd0d0347c5cdfe40592b2b
 k
 ;src/main/java/com/sofka/tallerejava/punto16/Ejecutable.java,8\8\887d43adefaa9eb17d3b9e49cb5c8703d43ca9b5
-k
-;src/main/java/com/sofka/tallerejava/punto17/Ejecutable.java,6\4\6452756d8a7e7b8be02b32b05af68b72e78259f9

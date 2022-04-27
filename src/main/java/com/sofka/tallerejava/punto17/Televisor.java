@@ -7,11 +7,18 @@ public class Televisor extends Electrodomestico {
     public boolean sintonizadorTDT;
 
     public Televisor() {
+        super();
+        this.resolucion = RESOLUCIONPORDEFECTO;
+        this.sintonizadorTDT=SINTONIZADORTDTPORDEFECTO;
 
     }
 
     public Televisor(double precioBase, double peso) {
+
         super(precioBase, peso);
+
+        this.resolucion = RESOLUCIONPORDEFECTO;
+        this.sintonizadorTDT=SINTONIZADORTDTPORDEFECTO;
     }
 
     public Televisor(double precioBase, String color, char consumoEnergetico, double peso, double resolucion, boolean sintonizadorTDT) {
