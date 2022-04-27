@@ -1,10 +1,20 @@
 package com.sofka.tallerejava.punto17;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Electrodomestico {
-    protected double precioBase = 100;
-    protected String color = "Blanco";
-    protected char consumoEnergetico = 'F';
-    protected double peso = 5;
+
+    static final double PRECIOBASE =100;
+    static final double PESOPORDEFECTO=5;
+    static final String CONSUMOENERGETICO="F";
+    static final String COLORPORDEFECTO = "Blanco";
+    protected List<String>coloresDisponible= Arrays.asList("blanco","nego","rojo","azul","gris");
+    protected double precioBase;
+    protected String color;
+    protected char consumoEnergetico;
+    protected double peso;
 
     public Electrodomestico() {
     }

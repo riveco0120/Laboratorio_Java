@@ -6,7 +6,7 @@ public class Menu {
 
 
     public static void main(String[] args) {
-        
+
         Scanner consola = new Scanner(System.in);
         int opcion = -1;
         int opcion2 = -1;

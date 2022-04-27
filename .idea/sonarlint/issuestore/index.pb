@@ -23,8 +23,6 @@ k
 ;src/main/java/com/sofka/tallerejava/punto16/Ejecutable.java,8\8\887d43adefaa9eb17d3b9e49cb5c8703d43ca9b5
 k
 ;src/main/java/com/sofka/tallerejava/punto17/Ejecutable.java,6\4\6452756d8a7e7b8be02b32b05af68b72e78259f9
-q
-Asrc/main/java/com/sofka/tallerejava/punto17/Electrodomestico.java,6\e\6e8ca775838d31da5a4432bbc8decd2f8e8b0724
 i
 9src/main/java/com/sofka/tallerejava/punto17/Lavadora.java,1\e\1eb47e364c07f6bd800bdcb242568dcd33c50cf1
 j
