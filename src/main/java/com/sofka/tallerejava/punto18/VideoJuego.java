@@ -2,8 +2,8 @@ package com.sofka.tallerejava.punto18;
 
 import java.util.ArrayList;
 
-public class VideoJuego implements IServicios{
-
+public class VideoJuego{
+/*
     public String titulo="";
     public int horasEstimada =10;
     public boolean entregado=false;
@@ -96,4 +96,6 @@ public class VideoJuego implements IServicios{
         }
         return res;
     }
+*/
 }
+

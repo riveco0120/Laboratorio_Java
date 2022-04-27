@@ -2,7 +2,7 @@ package com.sofka.tallerejava.punto18;
 
 public class Implementacio {
     public static void main(String[] args) {
-
+/*
         VideoJuego[] videoJuegos = new VideoJuego[5];
         videoJuegos[0] = new VideoJuego("Fifa", 10);
         videoJuegos[1] = new VideoJuego("Days Gone", 15);
@@ -53,6 +53,8 @@ public class Implementacio {
 
         System.out.println("el videojuego con más horas " + videoJuegoConMasHoras.toString());
         System.out.println("la serie con más temporadas " + miSerieConMasTemporadas.toString());
+    }
+*/
     }
 }
 

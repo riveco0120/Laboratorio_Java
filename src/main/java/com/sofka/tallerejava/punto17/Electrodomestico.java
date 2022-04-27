@@ -8,7 +8,7 @@ public class Electrodomestico {
 
     static final double PRECIOBASE =100;
     static final double PESOPORDEFECTO=5;
-    static final String CONSUMOENERGETICO="F";
+    static final char CONSUMOENERGETICO='F';
     static final String COLORPORDEFECTO = "Blanco";
     protected List<String>coloresDisponible= Arrays.asList("blanco","nego","rojo","azul","gris");
     protected double precioBase;
@@ -31,10 +31,17 @@ public class Electrodomestico {
         this.peso = peso;
     }
 
-    private void comprobarConsumoEnergetico(char letra) {
-        if (letra != 'A' || letra != 'F') {
-            this.consumoEnergetico = 'F';
+    private char comprobarConsumoEnergetico(char letra) {
+
+        String letrasDisponibles ="ABCDEF";
+        String auxiliar=String.valueOf(letra);
+        auxiliar=auxiliar.toUpperCase();
+
+        if(letrasDisponibles.contains(auxiliar)){
+            return auxiliar.charAt(0);
         }
+
+        return Electrodomestico.CONSUMOENERGETICO;
     }
 
     public void comprobarColor(String color) {
@@ -109,5 +116,13 @@ public class Electrodomestico {
     public double getPeso() {
         return peso;
     }
+
+    public static void main(String[] args) {
+        Electrodomestico electrodomestico = new Electrodomestico();
+        char letra= electrodomestico.comprobarConsumoEnergetico('A');
+        System.out.println(letra);
+    }
+
+
 }
 
